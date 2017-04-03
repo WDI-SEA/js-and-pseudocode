@@ -82,6 +82,9 @@ console.log(`side three: ${pythag}`);
 	    	set number after current 'b' to 'b'
 	    	return to step 2
 4. largest number is  'a'
+
+for smallest, reverse equalities.
+
 */
 
 
@@ -106,3 +109,18 @@ Steps:
 */
 
 var numbers = [20, 3, 5, 7, 13, 30];
+
+var a = numbers[0];
+var b = numbers[1];
+
+
+for (i = 0; i < numbers.length; i++) {
+
+    if (b < a) {
+        a = b;
+    } else {
+        b = numbers[i + 1 + i];
+    }
+}
+
+console.log(a);
