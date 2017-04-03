@@ -3,21 +3,31 @@
 	Create a fourth variable, greeting, that combines these 3 variables
 	to form a greeting.
 	For example, "Hello, I'm Anthony, I'm 20 years old and live in 100 Main St."
-	Log this variable to the console (console.log(yourVariableName)). 
+	Log this variable to the console (console.log(yourVariableName)).
 	Check the console to make sure you're getting the desired result.
 
 */
+var name = "Peter"
 
-/*
-	Part 2: Create another variable called greeting2. This time, use the
-	new ES6 Syntax, string interpolation, to create the same greeting.
+var age = 26
 
-	Hint: String interpolation uses backticks (`) instead of quotation marks.
+var address = "518 N 64th Street"
 
-	Log this variable to the console (console.log(yourVariableName)). 
-	Check the console to make sure you're getting the desired result.
+var info = "hello! My name is," + " " + name + ". " + "I am " + age + " " + "years old and live at " + address + "."
 
-*/
+console.log(info)
+
+console.log(`hello! My name is, ${name} i am ${age} years old and live at ${address}`)
+    /*
+    	Part 2: Create another variable called greeting2. This time, use the
+    	new ES6 Syntax, string interpolation, to create the same greeting.
+
+    	Hint: String interpolation uses backticks (`) instead of quotation marks.
+
+Log this variable to the console(console.log(yourVariableName)).
+Check the console to make sure you 're getting the desired result.
+
+* /
 
 /*
 	Part 3: Pythagorean theorem. We will be using the Math object we saw earlier
@@ -39,36 +49,29 @@
 	Hint: We need to be able to calculate the square of a number to find the value
 	of the hypotenuse. Does the Math object give us a function find the square of a number?
 
-	Log the side1, side2 and side3 variables to the console (console.log(yourVariableName)). 
+	Log the side1, side2 and side3 variables to the console (console.log(yourVariableName)).
 	Check the console to make sure you're getting the desired result.
 */
+var findthirdside = function(a, b) {
+    return Math.sqrt(a * a + b * b)
+}
+
+console.log(findthirdside(3, 4))
 
 /*
-	Part 4: (No coding is needed for this part).
-	We are given a list of 20 numbers. We have to go through the list and find the
-	largest number.
-
-	What would the pseudocode for this problem look like? What variables would we need?
-
-	Hint: How would we solve this problem if we had to do this with pencil and paper?
-	What number would we write down to remember? Anything that you write down probably
-	belongs in a variable.
-
-	Bonus: What would the pseudocode look like if you also had to find the smallest number?
+Place all numbers in an array. Then iterate over the arrray to compare the first number to the second number. Then continue to comapre the samller of the two numbers to the next number in the array. continue to do this until you have the samllest number.
 */
-
-
 /* Bonus
 Take a look at the numbers array below. Use the pseudo code you wrote above to find the largest number and log it to the console in the following format: `"The highest number is #"`.
 
-If you need a hint on how to solve this one, take a look at the steps listed below, along with the linked resources. 
+If you need a hint on how to solve this one, take a look at the steps listed below, along with the linked resources.
 
 Steps:
 - First create a variable highestNumber and give it a value of the number 0.
-- Then use a for loop(https://www.w3schools.com/js/js_loop_for.asp) to loop through the numbers array. 
+- Then use a for loop(https://www.w3schools.com/js/js_loop_for.asp) to loop through the numbers array.
 	Your for loop should look something like this:
 	for (var i = 0; i < numbers.length; i++) {
-	
+
 	}
 - Within the loop, use an if statement(https://www.w3schools.com/js/js_if_else.asp) to see if the current number (numbers[i]) is greater than the number that is currently stored in highestNumber.
 - If so, save numbers[i] in the highestNumber variable.
