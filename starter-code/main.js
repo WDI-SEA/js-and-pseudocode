@@ -7,76 +7,32 @@
 	Check the console to make sure you're getting the desired result.
 
 */
-var name = "Peter"
+var name = "Peter";
 
-var age = 26
+var age = 26;
 
-var address = "518 N 64th Street"
+var address = "518 N 64th Street";
 
-var info = "hello! My name is," + " " + name + ". " + "I am " + age + " " + "years old and live at " + address + "."
+var info = "hello! My name is," + " " + name + ". " + "I am " + age + " " + "years old and live at " + address + ".";
 
-console.log(info)
+console.log(info);
 
-console.log(`hello! My name is, ${name} i am ${age} years old and live at ${address}`)
-    /*
-    	Part 2: Create another variable called greeting2. This time, use the
-    	new ES6 Syntax, string interpolation, to create the same greeting.
+console.log(`hello! My name is, ${name} i am ${age} years old and live at ${address}`);
 
-    	Hint: String interpolation uses backticks (`) instead of quotation marks.
-
-Log this variable to the console(console.log(yourVariableName)).
-Check the console to make sure you 're getting the desired result.
-
-* /
-
-/*
-	Part 3: Pythagorean theorem. We will be using the Math object we saw earlier
-	in the lesson for this problem.
-
-	Create 2 variables, side1 and side2, which represent two sides of a triangle.
-	Assign these variables any positive integer values.
-	Create a third variable, side3, which represents the hypotenuse of the triangle.
-
-	Use the Pythogorean theorem to solve for the value of side3.
-	(https://en.wikipedia.org/wiki/Pythagorean_theorem)
-
-	Hint: Take a look at the MDN reference for more information about the Math object.
-	(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
-
-	Hint: We need to be able to calculate the square root of a number to find the
-	value of the hypotenuse. Does the Math object give us a function to find the square root?
-
-	Hint: We need to be able to calculate the square of a number to find the value
-	of the hypotenuse. Does the Math object give us a function find the square of a number?
-
-	Log the side1, side2 and side3 variables to the console (console.log(yourVariableName)).
-	Check the console to make sure you're getting the desired result.
-*/
 var findthirdside = function(a, b) {
     return Math.sqrt(a * a + b * b)
-}
+};
 
-console.log(findthirdside(3, 4))
+console.log(findthirdside(3, 4));
 
-/*
-Place all numbers in an array. Then iterate over the arrray to compare the first number to the second number. Then continue to comapre the samller of the two numbers to the next number in the array. continue to do this until you have the samllest number.
-*/
-/* Bonus
-Take a look at the numbers array below. Use the pseudo code you wrote above to find the largest number and log it to the console in the following format: `"The highest number is #"`.
-
-If you need a hint on how to solve this one, take a look at the steps listed below, along with the linked resources.
-
-Steps:
-- First create a variable highestNumber and give it a value of the number 0.
-- Then use a for loop(https://www.w3schools.com/js/js_loop_for.asp) to loop through the numbers array.
-	Your for loop should look something like this:
-	for (var i = 0; i < numbers.length; i++) {
-
-	}
-- Within the loop, use an if statement(https://www.w3schools.com/js/js_if_else.asp) to see if the current number (numbers[i]) is greater than the number that is currently stored in highestNumber.
-- If so, save numbers[i] in the highestNumber variable.
-	- Hint: you only need to use the var keyword when you initially set up a variable. To update a variable, simply use the variable name (highestNumber) followed by = followed by the new value (numbers[i]).
-- After the for loop, log highestNumber to the console.
-*/
 
 var numbers = [20, 3, 5, 7, 13, 30];
+
+var biggest = 0;
+
+for (i = 0; i < numbers.length; i++) {
+    if (numbers[i] > biggest) {
+        biggest = numbers[i]
+    }
+};
+console.log(biggest);
