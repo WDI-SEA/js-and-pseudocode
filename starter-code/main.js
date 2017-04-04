@@ -3,10 +3,17 @@
 	Create a fourth variable, greeting, that combines these 3 variables
 	to form a greeting.
 	For example, "Hello, I'm Anthony, I'm 20 years old and live in 100 Main St."
-	Log this variable to the console (console.log(yourVariableName)). 
+	Log this variable to the console (console.log(yourVariableName)).
 	Check the console to make sure you're getting the desired result.
 
 */
+
+var name = "Alaina"
+var age = 28;
+var address = "West Seattle";
+
+var greeting = `Hello, I'm ${name}. I'm ${age} years old and live in ${address}.`;
+
 
 /*
 	Part 2: Create another variable called greeting2. This time, use the
@@ -14,10 +21,17 @@
 
 	Hint: String interpolation uses backticks (`) instead of quotation marks.
 
-	Log this variable to the console (console.log(yourVariableName)). 
+	Log this variable to the console (console.log(yourVariableName)).
 	Check the console to make sure you're getting the desired result.
 
 */
+
+var name = "Alaina"
+var age = 28;
+var address = "West Seattle";
+
+var greeting = `Hello, I'm ${name}. I'm ${age} years old and live in ${address}.`;
+
 
 /*
 	Part 3: Pythagorean theorem. We will be using the Math object we saw earlier
@@ -39,9 +53,16 @@
 	Hint: We need to be able to calculate the square of a number to find the value
 	of the hypotenuse. Does the Math object give us a function find the square of a number?
 
-	Log the side1, side2 and side3 variables to the console (console.log(yourVariableName)). 
+	Log the side1, side2 and side3 variables to the console (console.log(yourVariableName)).
 	Check the console to make sure you're getting the desired result.
 */
+
+var side1 = 3;
+var side2 = 3;
+var side3 = Math.sqrt(Math.pow(side1, 2) + Math.pow(side2, 2));
+
+console.log(side3);
+
 
 /*
 	Part 4: (No coding is needed for this part).
@@ -51,29 +72,21 @@
 	What would the pseudocode for this problem look like? What variables would we need?
 
 	Hint: How would we solve this problem if we had to do this with pencil and paper?
-	What number would we write down to remember? Anything that you write down probably
-	belongs in a variable.
+	What number would we write down to remember? Anything that you write down probably belongs in a variable.
 
 	Bonus: What would the pseudocode look like if you also had to find the smallest number?
 */
 
 
-/* Bonus
-Take a look at the numbers array below. Use the pseudo code you wrote above to find the largest number and log it to the console in the following format: `"The highest number is #"`.
+list of 20 numbers
+need to find largest number
+if newNumber is larger than number currently in bin1, empty bin1 and place newNumber
 
-If you need a hint on how to solve this one, take a look at the steps listed below, along with the linked resources. 
+create an array with 20 numbers
+bin1 = largest number
 
-Steps:
-- First create a variable highestNumber and give it a value of the number 0.
-- Then use a for loop(https://www.w3schools.com/js/js_loop_for.asp) to loop through the numbers array. 
-	Your for loop should look something like this:
-	for (var i = 0; i < numbers.length; i++) {
-	
-	}
-- Within the loop, use an if statement(https://www.w3schools.com/js/js_if_else.asp) to see if the current number (numbers[i]) is greater than the number that is currently stored in highestNumber.
-- If so, save numbers[i] in the highestNumber variable.
-	- Hint: you only need to use the var keyword when you initially set up a variable. To update a variable, simply use the variable name (highestNumber) followed by = followed by the new value (numbers[i]).
-- After the for loop, log highestNumber to the console.
-*/
+evaluate number[0] and[1],
+    if [0] > [1], [0] = bin1;
+if [1] > [0], [1] = bin1;
 
-var numbers = [20, 3, 5, 7, 13, 30];
+loop through array, [1] > [2], etc.if number is larger, replace number currently in bin1 with new number.
