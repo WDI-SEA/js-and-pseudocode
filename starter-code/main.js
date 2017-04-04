@@ -3,21 +3,27 @@
 	Create a fourth variable, greeting, that combines these 3 variables
 	to form a greeting.
 	For example, "Hello, I'm Anthony, I'm 20 years old and live in 100 Main St."
-	Log this variable to the console (console.log(yourVariableName)). 
+	Log this variable to the console (console.log(yourVariableName)).
 	Check the console to make sure you're getting the desired result.
 
 */
-
+var name = "Shawn";
+var age = "21";
+var address = "321 Oak St";
+var greeting = "Hello, I'm " + name + ", I'm " + age + " years old and live on " + address + ".";
+console.log(greeting);
 /*
 	Part 2: Create another variable called greeting2. This time, use the
 	new ES6 Syntax, string interpolation, to create the same greeting.
 
 	Hint: String interpolation uses backticks (`) instead of quotation marks.
 
-	Log this variable to the console (console.log(yourVariableName)). 
+	Log this variable to the console (console.log(yourVariableName)).
 	Check the console to make sure you're getting the desired result.
 
 */
+var greeting2 = `Hello, I'm ${name}, I'm ${age} years old and live on ${address}.`;
+console.log(greeting2);
 
 /*
 	Part 3: Pythagorean theorem. We will be using the Math object we saw earlier
@@ -39,17 +45,42 @@
 	Hint: We need to be able to calculate the square of a number to find the value
 	of the hypotenuse. Does the Math object give us a function find the square of a number?
 
-	Log the side1, side2 and side3 variables to the console (console.log(yourVariableName)). 
+	Log the side1, side2 and side3 variables to the console (console.log(yourVariableName)).
 	Check the console to make sure you're getting the desired result.
 */
 
+var side1 = 3;
+var side2 = 4;
+var side3 = Math.sqrt(Math.pow(side1, 2) + Math.pow(side2, 2));
+console.log(side3);
 /*
 	Part 4: (No coding is needed for this part).
 	We are given a list of 20 numbers. We have to go through the list and find the
 	largest number.
 
 	What would the pseudocode for this problem look like? What variables would we need?
+*/
 
+/*===============
+- put the 20 numbers in an array (positions A for #1 thru T for #20)
+- Compare the 2 numbers in A and B.
+	If: the first number (A) is larger than the second number (B) then both stay in place.
+	Else: Swap the number's places so A's new number is larger than B's new number. (The larger number ends up to be on the left.)
+- Move the focus to the 2 numbers one position to the right (B and C).
+  If: the first number (B) is larger than the second number (C) then both stay in place.
+	Else: Swap the number's places so B's new number is larger than C's new number.
+	Then compare the 2 numbers one position left (A and B).
+	If: the first number (A) is smaller than the second number (B) then both stay in place.
+	Else: Swap the number's places so A's new number is larger than B's new number.
+	Result is A>B>C.
+- Repeat the process thru the numbers in S and T.
+- The first number in the array (possition 0) should be the largest.
+
+*** Bonus: to find the smallest number it will be the number in T. Otherwise move the smaller # in each pair to the left.
+===============*
+
+
+/*
 	Hint: How would we solve this problem if we had to do this with pencil and paper?
 	What number would we write down to remember? Anything that you write down probably
 	belongs in a variable.
@@ -61,14 +92,14 @@
 /* Bonus
 Take a look at the numbers array below. Use the pseudo code you wrote above to find the largest number and log it to the console in the following format: `"The highest number is #"`.
 
-If you need a hint on how to solve this one, take a look at the steps listed below, along with the linked resources. 
+If you need a hint on how to solve this one, take a look at the steps listed below, along with the linked resources.
 
 Steps:
 - First create a variable highestNumber and give it a value of the number 0.
-- Then use a for loop(https://www.w3schools.com/js/js_loop_for.asp) to loop through the numbers array. 
+- Then use a for loop(https://www.w3schools.com/js/js_loop_for.asp) to loop through the numbers array.
 	Your for loop should look something like this:
 	for (var i = 0; i < numbers.length; i++) {
-	
+
 	}
 - Within the loop, use an if statement(https://www.w3schools.com/js/js_if_else.asp) to see if the current number (numbers[i]) is greater than the number that is currently stored in highestNumber.
 - If so, save numbers[i] in the highestNumber variable.
