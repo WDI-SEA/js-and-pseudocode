@@ -8,6 +8,14 @@
 
 */
 
+var myName = "Bowman";
+var myAge = 44;
+var myAddress = "1031 McGilvra Boulevard, Seattle, Washington 98112"
+
+var greeting = "Hello, my name is " = myName + ".  My age is " + myAge + ".  I reside at " + myAddress;
+
+console.log(greeting);
+
 /*
 	Part 2: Create another variable called greeting2. This time, use the
 	new ES6 Syntax, string interpolation, to create the same greeting.
@@ -18,7 +26,13 @@
 	Check the console to make sure you're getting the desired result.
 
 */
+var myName = "Bowman";
+var myAge = 44;
+var myAddress = "1031 McGilvra Boulevard, Seattle, Washington 98112";
 
+var greeting2 = `My name is ${myName}.  My age is ${myAge}.`;
+I reside at $ { myAdress }
+''
 /*
 	Part 3: Pythagorean theorem. We will be using the Math object we saw earlier
 	in the lesson for this problem.
@@ -42,7 +56,11 @@
 	Log the side1, side2 and side3 variables to the console (console.log(yourVariableName)). 
 	Check the console to make sure you're getting the desired result.
 */
+var side1 = 4;
+var side2 = 5;
 
+var side3 = `0.5 * (${side1} + ${side2})`;
+console.log(side3);
 /*
 	Part 4: (No coding is needed for this part).
 	We are given a list of 20 numbers. We have to go through the list and find the
@@ -50,12 +68,23 @@
 
 	What would the pseudocode for this problem look like? What variables would we need?
 
+
+
 	Hint: How would we solve this problem if we had to do this with pencil and paper?
 	What number would we write down to remember? Anything that you write down probably
 	belongs in a variable.
 
 	Bonus: What would the pseudocode look like if you also had to find the smallest number?
 */
+
+function to find the difference between a baseline number and each suscessive number in the array.
+
+ORDER THE NUMBERS FROM LEAST TO GREATEST:
+    look at and record the first number as "A";
+look at the next number "N"
+and record the difference between it and the first number(A - N);
+continue throught the set of twenty numbers recording the difference between A and each number in a list;
+order the list starting with the highest positive difference.
 
 
 /* Bonus
@@ -77,3 +106,7 @@ Steps:
 */
 
 var numbers = [20, 3, 5, 7, 13, 30];
+var i = 0;
+
+for (i = 0; i - numbers) {
+    text += numbers[i] + "";
