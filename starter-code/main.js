@@ -8,6 +8,14 @@
 
 */
 
+var myName = "Maria-Christina";
+var myAge = 30;
+var myAddress = "14925 73rd Avenue Northeast";
+
+var greeting = "Hello, I'm " + myName + ", I'm " + myAge + " years old and live" + " at" + myAddress + "."
+
+console.log(greeting);
+
 /*
 	Part 2: Create another variable called greeting2. This time, use the
 	new ES6 Syntax, string interpolation, to create the same greeting.
@@ -16,18 +24,24 @@
 
 	Log this variable to the console (console.log(yourVariableName)). 
 	Check the console to make sure you're getting the desired result.
-
 */
+
+// var greeting = "Hello, I'm " + myName + ", I'm " + myAge + " years old and live" + " at" + myAddress + "."
+// becomes
+
+var greeting2 = `Hello, I'm ${myName}, I'm ${myAge} years old and live at ${myAddress}.`
+
+
 
 /*
 	Part 3: Pythagorean theorem. We will be using the Math object we saw earlier
 	in the lesson for this problem.
 
-	Create 2 variables, side1 and side2, which represent two sides of a triangle.
+	a.Create 2 variables, side1 and side2, which represent two sides of a triangle.
 	Assign these variables any positive integer values.
-	Create a third variable, side3, which represents the hypotenuse of the triangle.
+	b.Create a third variable, side3, which represents the hypotenuse of the triangle.
 
-	Use the Pythogorean theorem to solve for the value of side3.
+	c.Use the Pythogorean theorem to solve for the value of side3.
 	(https://en.wikipedia.org/wiki/Pythagorean_theorem)
 
 	Hint: Take a look at the MDN reference for more information about the Math object.
@@ -39,9 +53,16 @@
 	Hint: We need to be able to calculate the square of a number to find the value
 	of the hypotenuse. Does the Math object give us a function find the square of a number?
 
-	Log the side1, side2 and side3 variables to the console (console.log(yourVariableName)). 
+	d.Log the side1, side2 and side3 variables to the console (console.log(yourVariableName)). 
 	Check the console to make sure you're getting the desired result.
 */
+
+var side1 = 3;
+var side2 = 2;
+var side3 = Math.sqrt(Math.pow(side1, 2) + Math.pow(side2, 2));
+
+console.log(side3);
+
 
 /*
 	Part 4: (No coding is needed for this part).
@@ -56,6 +77,32 @@
 
 	Bonus: What would the pseudocode look like if you also had to find the smallest number?
 */
+
+// Solution to Part 4: Problem: We are given a list of 20 numbers. We have to go through the list and find the largest number.
+
+// // High Level (Result/Goal)
+// Find the largest number
+
+// // Medium Level (Parts)
+//     - Go through list of 20 numbers 
+// - Compare numbers 
+// - Find Largest Number
+
+
+// // Low Level (Process)
+// Find the largest number
+// 	Define the list of 20 numbers
+//  Define a variable named largestNumber with an initial value of the first number
+//     - Go through list of 20 numbers 
+// 			- look at list 
+// 		- Compare numbers 
+// 				- examine one number at time 
+// 				- compare largestNumber to the current number -
+//     		if  current number is larger than largestNumber
+//     			- store the current number in largestNumber 
+
+//     - Find Largest Number 
+//     		- When you are done, you will have the largestNumber.
 
 
 /* Bonus
