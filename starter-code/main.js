@@ -1,12 +1,20 @@
+var numbers = [20, 3, 5, 7, 13, 30];
 /*
 	Part 1: Create three variables: name, age, address.
 	Create a fourth variable, greeting, that combines these 3 variables
 	to form a greeting.
 	For example, "Hello, I'm Anthony, I'm 20 years old and live in 100 Main St."
-	Log this variable to the console (console.log(yourVariableName)). 
+	Log this variable to the console (console.log(yourVariableName)).
 	Check the console to make sure you're getting the desired result.
 
 */
+var name = "Celina";
+var age = "24";
+var address = "That St";
+
+var greeting = "Hello, I'm " + name + ", I'm " + age + ", and I live at " + address + ".";
+
+console.log(greeting);
 
 /*
 	Part 2: Create another variable called greeting2. This time, use the
@@ -14,10 +22,13 @@
 
 	Hint: String interpolation uses backticks (`) instead of quotation marks.
 
-	Log this variable to the console (console.log(yourVariableName)). 
+	Log this variable to the console (console.log(yourVariableName)).
 	Check the console to make sure you're getting the desired result.
 
 */
+var greeting2 = `Hello, I'm ${name}, I'm ${age}, and I live at ${address
+}.`;
+console.log(greeting2);
 
 /*
 	Part 3: Pythagorean theorem. We will be using the Math object we saw earlier
@@ -39,9 +50,18 @@
 	Hint: We need to be able to calculate the square of a number to find the value
 	of the hypotenuse. Does the Math object give us a function find the square of a number?
 
-	Log the side1, side2 and side3 variables to the console (console.log(yourVariableName)). 
+	Log the side1, side2 and side3 variables to the console (console.log(yourVariableName)).
 	Check the console to make sure you're getting the desired result.
 */
+
+var side1 = 4;
+var side2 = 6;
+
+var side3 = Math.sqrt(side1 + side2);
+
+console.log(`Side 3 is ${side3}`);
+console.log(`Side 2 is ${side2}`);
+console.log(`Side 1 is ${side1}`);
 
 /*
 	Part 4: (No coding is needed for this part).
@@ -57,23 +77,28 @@
 	Bonus: What would the pseudocode look like if you also had to find the smallest number?
 */
 
+#1 Compare first number listed to next number.
+# 1 a.If the next number is greater than first number, list the next number above the first number.
+#1 b. If the next number is lesser than the first number, list the next number below the first number.
+# 2 Take higher number from comparison and compare to the next number listed.
+#3 Repeat step 1 for 20 rotations until greatest number is listed at the top of the list.
+
+
 
 /* Bonus
-Take a look at the numbers array below. Use the pseudo code you wrote above to find the largest number and log it to the console in the following format: `"The highest number is #"`.
+Take a look at the numbers array below. Use the pseudo code you wrote above to find the largest number and log it to the console in the following format: `"The highest number is # "`.
 
-If you need a hint on how to solve this one, take a look at the steps listed below, along with the linked resources. 
+If you need a hint on how to solve this one, take a look at the steps listed below, along with the linked resources.
 
 Steps:
-- First create a variable highestNumber and give it a value of the number 0.
-- Then use a for loop(https://www.w3schools.com/js/js_loop_for.asp) to loop through the numbers array. 
-	Your for loop should look something like this:
-	for (var i = 0; i < numbers.length; i++) {
-	
-	}
-- Within the loop, use an if statement(https://www.w3schools.com/js/js_if_else.asp) to see if the current number (numbers[i]) is greater than the number that is currently stored in highestNumber.
-- If so, save numbers[i] in the highestNumber variable.
-	- Hint: you only need to use the var keyword when you initially set up a variable. To update a variable, simply use the variable name (highestNumber) followed by = followed by the new value (numbers[i]).
-- After the for loop, log highestNumber to the console.
-*/
+    -First create a variable highestNumber and give it a value of the number 0. - Then use a
+for loop(https: //www.w3schools.com/js/js_loop_for.asp) to loop through the numbers array.
+        Your
+        for loop should look something like this:
+        for (var i = 0; i < numbers.length; i++) {
 
-var numbers = [20, 3, 5, 7, 13, 30];
+        } - Within the loop, use an
+        if statement(https: //www.w3schools.com/js/js_if_else.asp) to see if the current number (numbers[i]) is greater than the number that is currently stored in highestNumber.
+            -If so, save numbers[i] in the highestNumber variable. - Hint: you only need to use the
+            var keyword when you initially set up a variable.To update a variable, simply use the variable name(highestNumber) followed by = followed by the new value(numbers[i]). - After the
+            for loop, log highestNumber to the console.*/
