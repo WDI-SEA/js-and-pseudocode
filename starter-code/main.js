@@ -109,11 +109,16 @@ Steps:
 */
 
 var numbers = [20, 3, 5, 7, 13, 30];
-var highestNumber = 0;
+var highestNumber;
 
-for (var i = 0; i < numbers.length; i++) {
-    if (numbers[i] > highestNumber) {
-        highestNumber = (numbers[i])
+if (numbers.length === 0) {
+    highestNumber = "Your array is empty.";
+} else {
+    highestNumber = numbers[0];
+    for (var i = 1; i < numbers.length; i++) {
+        if (numbers[i] > highestNumber) {
+            highestNumber = (numbers[i]);
+        }
     }
 }
 
