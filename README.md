@@ -1,10 +1,10 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) JS and Pseudocode Homework
 
->***Notes:*** In this homework assignment, we are going to practice fundamental programming skills. As programmers, we will be performing numerous calculations that we want to save. We'll practice using variables to save these values so that we can reuse them later on.
+> ***Notes:*** In this homework assignment, we are going to practice fundamental programming skills. As programmers, we will be performing numerous calculations that we want to save. We'll practice using variables to save these values so that we can reuse them later on.
 
->There will also be instances where we won't write our own code from scratch. Instead, we will use code that other people have created and tested heavily. To do this, we'll have to be comfortable reading documentation to learn how to use other people's existing code, as well as how to incorporate it into our own code.
+> There will also be instances where we won't write our own code from scratch. Instead, we will use code that other people have created and tested heavily. To do this, we'll have to be comfortable reading documentation to learn how to use other people's existing code, as well as how to incorporate it into our own code.
 
->When tackling a new programming challenge, it is tempting to dive right into the code. For simpler problems that the developer has seen before, this might not be an issue. But for larger problems that they haven't seen before, developers will usually plan out their solution in plain English to make sure their logic is correct. We'll practice pseudocode so we can be comfortable tackling new problems that come our way.
+> When tackling a new programming challenge, it is tempting to dive right into the code. For simpler problems that the developer has seen before, this might not be an issue. But for larger problems that they haven't seen before, developers will usually plan out their solution in plain English to make sure their logic is correct. We'll practice pseudocode so we can be comfortable tackling new problems that come our way.
 
 ## Exercise
 
