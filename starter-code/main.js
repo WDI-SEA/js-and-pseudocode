@@ -8,6 +8,20 @@
 
 */
 
+
+
+//PART1
+var name = "Tim";
+var age = 24;
+var address = "100 Main St.";
+
+var greeting = "Hello, I'm " + name + ", I'm " + age + " years old and live in " + address;
+
+console.log(greeting);
+
+
+
+
 /*
 	Part 2: Create another variable called greeting2. This time, use the
 	new ES6 Syntax, string interpolation, to create the same greeting.
@@ -18,6 +32,20 @@
 	Check the console to make sure you're getting the desired result.
 
 */
+
+
+
+//PART2
+var name = `Bob`;
+var age = 50;
+var address = `1234 Builder St.`;
+
+var greeting2 = `My name is ${name}. I am ${age}, and I live on ${address}`;
+
+console.log(greeting2);
+
+
+
 
 /*
 	Part 3: Pythagorean theorem. We will be using the Math object we saw earlier
@@ -43,6 +71,22 @@
 	Check the console to make sure you're getting the desired result.
 */
 
+//PART3
+
+// a^2 + b^2 = c^2
+
+var side1 = Math.pow(3, 2);
+var side2 = Math.pow(2, 2);
+var side3 = Math.sqrt((side1 + side2));
+
+
+console.log(side1);
+console.log(side2);
+console.log(side3);
+
+
+
+
 /*
 	Part 4: (No coding is needed for this part).
 	We are given a list of 20 numbers. We have to go through the list and find the
@@ -56,6 +100,29 @@
 
 	Bonus: What would the pseudocode look like if you also had to find the smallest number?
 */
+
+
+
+
+//PART4
+
+// 1. Look at the first number
+// 2. Look at the second number
+// 3. compare the first number and second nunmber
+// 4. keep the larger number
+// 5. Subtract 1 from the list
+// 6. repeat step 1 - 5 until list of numbers = 0
+
+
+// 1. Look at the first number
+// 2. Look at the second number
+// 3. compare the first number and second nunmber
+// 4. keep the smaller number
+// 5. Subtract 1 from the list
+// 6. repeat step 1 - 5 until list of number = 0
+
+
+
 
 
 /* Bonus
