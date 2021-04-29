@@ -31,27 +31,16 @@
     * Hint: String interpolation uses `backticks` instead of quotation marks.
     * Log the `greeting2` variable to the console. Check the console to make sure you're getting the desired result.
 
-#### Part 3: Pythagorean Theory
-_We will be using the `Math` object for this problem._
+#### Part 3: 
+* "Code Testing." Let's check and see if we did everything correctly and that `greeting` returns the same value as `greeting2`.
+* Create a variable problemSolved whose value is the boolean value of if `greeting` and `greeting2` are equivalent. Log this variable to the console to check the values result.
+* If the return is false, correct your bugs above until `greeting` and `greeting2` are equivalent. 
 
-* Create two variables, `side1` and `side2`, which represent two sides of a triangle.
-* Assign these variables any positive integer values.
-* Create a third variable, `side3`, which represents the hypotenuse of the triangle.
-* Use the Pythogorean theorem to solve for the value of `side3`.
-	(https://en.wikipedia.org/wiki/Pythagorean_theorem)
-	  * _Hint: Take a look at the MDN reference for more information about the Math object._
-	(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
-	  * _Hint: We need to be able to calculate the square root of a number to find the
-	value of the hypotenuse. Does the Math object give us a function to find the square root?_
-	  * _Hint: We need to be able to calculate the square of a number to find the value of the hypotenuse. Does the Math object give us a function find the square of a number?_
-	  * Log all three variables to the console. Check the console to make sure you're getting the desired result.
   
-#### Part 4/Bonus: (No coding is needed for this part).
+#### Part 4: (No coding is needed for this part).
 * We are given a list of 20 numbers. We have to go through the list and find the largest number.
 * What would the pseudocode for this problem look like? What variables would we need?
 	* Hint: How would we solve this problem if we had to do this with pencil and paper?
 * What number would we write down in order to remember? Anything that you write down probably belongs in a variable.
 * **Extra Bonus Question:** What would the pseudocode look like if you also had to find the smallest number?
 
-## Resources
-[MDN Reference for the Math object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
