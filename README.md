@@ -1,6 +1,11 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) JS and Pseudocode Homework
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Pseudocoding, Javascript, and Programatic Thinking
 
-> ***Notes:*** In this homework assignment, we are going to practice fundamental programming skills. As programmers, we will be performing numerous calculations that we want to save. We'll practice using variables to save these values so that we can reuse them later on.
+### Prerequisite Lessons:
+* Javascript Foundations
+* Boolean Logic
+* Introduction to the Chrome Developer Tools
+
+> ***Notes:*** In this lab, we are going to practice fundamental programming skills. As programmers, we will be performing numerous calculations that we want to save. We'll practice using variables to save these values so that we can reuse them later on.
 
 > There will also be instances where we won't write our own code from scratch. Instead, we will use code that other people have created and tested heavily. To do this, we'll have to be comfortable reading documentation to learn how to use other people's existing code, as well as how to incorporate it into our own code.
 
@@ -11,7 +16,6 @@
 ### Requirements
 * Follow the instructions provided in the `main.js` file in the `starter-code` folder.
 * Open the `index.html` file and examine the console in the Developer Tools. Look here to see if your code is producing the correct results.
-* Submit 2-5 questions that you would like addressed regarding this homework.
 
 ### Directions
 
@@ -42,38 +46,12 @@ _We will be using the `Math` object for this problem._
 	  * _Hint: We need to be able to calculate the square of a number to find the value of the hypotenuse. Does the Math object give us a function find the square of a number?_
 	  * Log all three variables to the console. Check the console to make sure you're getting the desired result.
   
-#### Part 4: (No coding is needed for this part).
+#### Part 4/Bonus: (No coding is needed for this part).
 * We are given a list of 20 numbers. We have to go through the list and find the largest number.
 * What would the pseudocode for this problem look like? What variables would we need?
 	* Hint: How would we solve this problem if we had to do this with pencil and paper?
 * What number would we write down in order to remember? Anything that you write down probably belongs in a variable.
-* **Bonus:** What would the pseudocode look like if you also had to find the smallest number?
-
-#### Bonus: 
-Take a look at the array below. Use the pseudocode you wrote above to find the largest number and log it to the console in the following format: `"The highest number is #"`.
-
-```js
-var numbers = [20, 3, 5, 7, 13, 30];
-```
-
-If you need a hint on how to solve this one, take a look at the steps listed below, along with the linked resources. 
-
-Steps:
-- First create a variable `highestNumber` and give it a value of the number `0`.
-
-- Then use a [`for` loop](https://www.w3schools.com/js/js_loop_for.asp) to loop through the `numbers` array. 
-	- 	Your `for` loop should look something like this:
-
-		```js
-		for (var i = 0; i < numbers.length; i++) {
-		
-		}
-		```
-- Within the loop, use an [`if` statement](https://www.w3schools.com/js/js_if_else.asp) to see if the current number (`numbers[i]`) is greater than the number that is currently stored in `highestNumber`.
-- If so, save `numbers[i]` in the `highestNumber` variable.
-	- Hint: You only need to use `var` when you initially set up a variable. To update a variable, simply use the variable name (`highestNumber`) followed by `=` followed by the new value (`numbers[i]`).
-- On the line after the `for` loop, log `highestNumber` to the console in this format: "The highest number is #"`.
-
+* **Extra Bonus Question:** What would the pseudocode look like if you also had to find the smallest number?
 
 ## Resources
 [MDN Reference for the Math object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
